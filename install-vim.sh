@@ -1,11 +1,4 @@
 #!/usr/bin/env bash
-
-if hostnamectl | grep -q Ubuntu; then
-    ./remove-apt-vim.sh 
-else
-    ./remove-dnf-vim.sh
-fi
-
 echo "Verify python2 configuration is in /usr/lib/python2.7/config-x86_64-linux-gnu"
 echo "If it is not then stop the script and change --with-python-config-dir option"
 echo "Verify python3 configuration is in /usr/lib/python3.7m/config-3.7m-x86_64-linux-gnu"
