@@ -45,8 +45,7 @@ if [ ! -d $HOME/.vim/bundle/Vundle.vim ]; then
 else
     git pull
 fi
-cd $HOME/.vim/bundle/Vundle.vim
-cd /tmp
+
 vim -c PluginInstall -c q -c q
 
 # Build YouCompleteMe
