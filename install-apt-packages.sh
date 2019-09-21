@@ -1,15 +1,16 @@
 #!/usr/bin/env bash
 # Go
-# sudo add-apt-repository -y ppa:longsleep/golang-backports
+sudo add-apt-repository -y ppa:longsleep/golang-backports
 
 # C#
-# sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-# echo "deb https://download.mono-project.com/repo/ubuntu stable-bionic main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+echo "deb https://download.mono-project.com/repo/ubuntu stable-bionic main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
 
-# sudo apt update
-# sudo apt upgrade
+sudo apt update
+sudo apt upgrade -y
 
 sudo apt install -y \
+    clang \
     libtinfo-dev \
     libclang-dev \
     libpthread-workqueue-dev \
@@ -46,7 +47,6 @@ sudo apt install -y \
     mono-devel
 
 # Javascript
-# curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-# sudo apt install -y \
-    # nodejs \
-    # npm
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt install -y \
+    nodejs
