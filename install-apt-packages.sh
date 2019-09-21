@@ -10,7 +10,6 @@
 # sudo apt upgrade
 
 sudo apt install -y \
-    xsel \
     libtinfo-dev \
     libclang-dev \
     libpthread-workqueue-dev \
