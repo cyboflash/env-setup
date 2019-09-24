@@ -10,6 +10,7 @@ sudo apt update
 sudo apt upgrade -y
 
 sudo apt install -y \
+    gnome-tweak-tool \
     gnome-shell-extensions \
     clang \
     libtinfo-dev \
