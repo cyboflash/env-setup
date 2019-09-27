@@ -63,4 +63,4 @@ fi
 cd build
 cmake .. -DDOWNLOAD_CLANG=0 -DLLVM_CONFIG=/usr/bin/llvm-config-8 -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON
 make && make install
-make clean && make clean_clang
+make clean
