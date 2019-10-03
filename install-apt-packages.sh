@@ -10,6 +10,8 @@ sudo apt update
 sudo apt upgrade -y
 
 sudo apt install -y \
+    xsel \
+    global \
     silversearcher-ag \
     net-tools \
     gnome-tweak-tool \
