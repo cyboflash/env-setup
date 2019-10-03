@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 echo "Verify python2 configuration is in /usr/lib/python2.7/config-x86_64-linux-gnu"
 echo "If it is not then stop the script and change --with-python-config-dir option"
-echo "Verify python3 configuration is in /usr/lib/python3.7m/config-3.7m-x86_64-linux-gnu"
+echo "Verify python3 configuration is in /usr/lib/python3.7/config-3.7m-x86_64-linux-gnu"
 echo "If it is not then stop the scrtop and change --with-python3-config-dir"
 read -n 1 -p "Press Enter to continue or Ctrl-C to stop"
 
@@ -22,7 +22,7 @@ cd vim
 	    --enable-pythoninterp=yes \
 	    --with-python-config-dir=/usr/lib/python2.7/config-x86_64-linux-gnu \
 	    --enable-python3interp=yes \
-	    --with-python3-config-dir=/usr/lib/python3.7m/config-x86_64-linux-gnu \
+	    --with-python3-config-dir=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu \
 	    --enable-perlinterp=yes \
 	    --enable-luainterp=yes \
         --enable-gui=gtk2 \
