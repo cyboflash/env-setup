@@ -10,6 +10,7 @@ sudo apt update
 sudo apt upgrade -y
 
 sudo apt install -y \
+    tree \
     repo \
     exuberant-ctags \
     xsel \
