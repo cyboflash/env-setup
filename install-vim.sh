@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 echo "Verify python2 configuration is in /usr/lib/python2.7/config-x86_64-linux-gnu"
 echo "If it is not then stop the script and change --with-python-config-dir option"
-echo "Verify python3 configuration is in /usr/lib/python3.7/config-3.7m-x86_64-linux-gnu"
+echo "Verify python3 configuration is in /usr/lib/python3.8/config-3.8-x86_64-linux-gnu"
 echo "If it is not then stop the scrtop and change --with-python3-config-dir"
 read -n 1 -p "Press Enter to continue or Ctrl-C to stop"
 
@@ -22,7 +22,7 @@ cd vim
 	    --enable-pythoninterp=yes \
 	    --with-python-config-dir=/usr/lib/python2.7/config-x86_64-linux-gnu \
 	    --enable-python3interp=yes \
-	    --with-python3-config-dir=/usr/lib/python3.7/config-3.7m-x86_64-linux-gnu \
+	    --with-python3-config-dir=/usr/lib/python3.8/config-3.8-x86_64-linux-gnu \
 	    --enable-perlinterp=yes \
 	    --enable-luainterp=yes \
         --enable-gui=gtk2 \
@@ -61,6 +61,7 @@ if [ ! -d build ]; then
     mkdir build
 fi
 cd build
-cmake .. -DDOWNLOAD_CLANG=0 -DLLVM_CONFIG=/usr/bin/llvm-config-8 -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON
+cmake .. -DDOWNLOAD_CLANG=0 -DLLVM_CONFIG=/usr/bin/llvm-config-10 -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON
 make && make install
 make clean
+
